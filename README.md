@@ -14,20 +14,19 @@
 2. After creation, Enable `Google Assistant API` for your project in the [Cloud Platform Console](https://console.cloud.google.com/)
 
 **Follow this step**
-  - Agree and Continue
-  
+  - Agree and Continue<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2.png)
-  - Select your project
+  - Select your project<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2a.png)
-  - In the left menu select `APIs & Services` and `Library`
+  - In the left menu select `APIs & Services` and `Library`<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2b.png)
-  - API Library search
+  - API Library search<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2c.png)
-  - Google Asssitant API search
+  - Google Asssitant API search<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2d.png)
-  - Enable Google Assistant API
+  - Enable Google Assistant API<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2e.png)
-  - Wait for activation
+  - Wait for activation<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2f.png)
   
 3. Return to Actions Console and Follow the instructions to [register a device model](https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device)
