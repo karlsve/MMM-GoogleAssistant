@@ -16,7 +16,7 @@
 **Follow this step**
   - Agree and Continue<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2.png)
-  - Select your project<br>
+  - Select your project and note your `Project ID` name<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2a.png)
   - In the left menu select `APIs & Services` and `Library`<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2b.png)
@@ -29,10 +29,17 @@
   - Wait for activation<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2f.png)
   
-3. Return to Actions Console and Follow the instructions to [register a device model](https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device)
+3. Return to Actions Console and Follow this instructions to register a device model
 
-(If you cannot find `Device registration` menu, you can use this URL https://console.actions.google.com/u/[0]/project/[yourprojectId]/deviceregistration/) (change [] to your project) or [Manual registration](https://developers.google.com/assistant/sdk/reference/device-registration/register-device-manual))
-
+  - You can use this URL https://console.actions.google.com/u/[0]/project/[yourprojectId]/deviceregistration/) (change [] to your Project ID)<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/3.png)
+  - Register Model<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/3b.png)
+  - Download credentials<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/3c.png)
+  - Optional (Maybe for a future version Of GoogleAssistant)<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/3d.png)
+  
 4. In register steps(step 2), you can download your `credentials.json` for OAuth. Carefully store it in `MMM-GoogleAssistant` directory.
  - Or you can find your credentials from [Cloud Platform Console](https://console.cloud.google.com/) (Your Project > APIs & Services > Credentials)
 5. In your SBC, you can run auth-tool for auth. (not via SSH)
