@@ -51,8 +51,10 @@
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/4e.png)
   
 4. you have download your credentials file (`client_secret_XXX.json` file) for OAuth and Carefully store it in `MMM-GoogleAssistant` directory and rename it to `credentials.json`
-
-
+```sh
+cd ~/MagicMirror/modules/MMM-GoogleAssistant
+mv client_secret_XXX.json credentials.json
+```
  
 5. In your SBC, you can run auth-tool for auth. (not via SSH)
 ```sh
@@ -61,16 +63,20 @@ node auth_and_test.js
 ```
    a. If you meet some errors related with node version, execute `npm rebuild` and try again.
 
-   b. At first execution, this script will try opening a browser and getting permission of a specific user for using this Assistant. (So you'd better to execute this script in your RPI shell, not via SSH)
+   b. At first execution, this script will try opening a browser and getting permission of a specific user for using this Assistant. (So you'd better to execute this script in your RPI shell, not via SSH)<br>
+     - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/5a.png)
+   
 
-   c. After confirmation, Some code (`4/ABCD1234XXXXX....`) will appear in the browser. Copy that code and paste in your console's request (`Paste your code:`)
+   c. After confirmation, Some code (`4/ABCD1234XXXXX....`) will appear in the browser.<br>
+     - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/5c.png)
+   
+   d. Copy that code and paste in your console's request (`Paste your code:`)<br>
+     - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/6.png)
 
-   d. On success, Prompt `Type your request` will be displayed. Type anything for testing assistant. (e.g; `Hello`, `How is the weather today?`)
-
+   d. On success, Prompt `Type your request` will be displayed. Type anything for testing assistant. (e.g; `Hello`, `How is the weather today?`)<br>
+     - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/6a.png)
    e. Now you can find `token.json` in your `MMM-AssistantGoogle` directory.
-
-
-
+     - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/6c.png)
 
 ## Get `deviceModelId` and `deviceInstanceId`
 > If you are not an experienced developer or don't need `gactions` implements, pass this section.
