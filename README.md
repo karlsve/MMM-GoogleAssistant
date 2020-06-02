@@ -2,6 +2,8 @@
 
 ## Get Auth and credentials to make profile.
 1. Create a project in the [Actions Console](https://console.actions.google.com/)
+
+**Follow this step**
   - New Project
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/1.png)
   - Agree and Continue
@@ -10,6 +12,10 @@
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/1c.png)
 
 2. After creation, Enable `Google Assistant API` for your project in the [Cloud Platform Console](https://console.cloud.google.com/)
+
+**Follow this step**
+  - Agree and Continue
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/2.png)
 3. Return to Actions Console and Follow the instructions to [register a device model](https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device)
 
 (If you cannot find `Device registration` menu, you can use this URL https://console.actions.google.com/u/[0]/project/[yourprojectId]/deviceregistration/) (change [] to your project) or [Manual registration](https://developers.google.com/assistant/sdk/reference/device-registration/register-device-manual))
