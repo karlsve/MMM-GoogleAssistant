@@ -65,7 +65,6 @@ node auth_and_test.js
 
    b. At first execution, this script will try opening a browser and getting permission of a specific user for using this Assistant. (So you'd better to execute this script in your RPI shell, not via SSH)<br>
      - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/5a.png)
-   
 
    c. After confirmation, Some code (`4/ABCD1234XXXXX....`) will appear in the browser.<br>
      - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/5c.png)
@@ -73,12 +72,13 @@ node auth_and_test.js
    d. Copy that code and paste in your console's request (`Paste your code:`)<br>
      - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/6.png)
 
-   d. On success, Prompt `Type your request` will be displayed. Type anything for testing assistant. (e.g; `Hello`, `How is the weather today?`)<br>
+   e. On success, Prompt `Type your request` will be displayed. Type anything for testing assistant. (e.g; `Hello`, `How is the weather today?`)<br>
      - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/6a.png)
-   e. Now you can find `token.json` in your `MMM-AssistantGoogle` directory.
+
+   f. Now you can find `token.json` in your `MMM-AssistantGoogle` directory.<br>
      - ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/6c.png)
 
-## Get `deviceModelId` and `deviceInstanceId`
+## Get `deviceModelId` and `deviceInstanceId` [Optional]
 > If you are not an experienced developer or don't need `gactions` implements, pass this section.
 
 If you want not only pure Assistant embeding but also customized gactions for device, you might need to get `deviceModelId` and `deviceInstanceId`. To help understanding, **deviceModel** is something like `Volkswagen Golf` or `MagicMirror` and **deviceInstance** is something like `mom's car` or `mirror in living room`.
@@ -89,4 +89,3 @@ You can get `deviceModelId` as a result of previous [register a device model](ht
 ### For `deviceInstanceId`
 You need additional `google-assistant-sdk` library. See [
 Manually Register a Device with the REST API](https://developers.google.com/assistant/sdk/reference/device-registration/register-device-manual#get-access-token) page.
-
