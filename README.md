@@ -39,9 +39,21 @@
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/3c.png)
   - Optional (Maybe for a future version Of GoogleAssistant)<br>
   ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/3d.png)
+
+  - If needed, you can find again your credentials from [Cloud Platform Console](https://console.cloud.google.com/) (Your Project > APIs & Services > Credentials)<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/4b.png)
+4. `OAuth Consent Screen` setup
+  - Go to [Cloud Platform Console](https://console.cloud.google.com/), then navigate to `APIs & Services > OAuth Consent Screen`. At first, you'll be asked which user type would use your project. Just select `External`.<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/4c.png)
+  - Select you email adress<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/4d.png)
+  - Save it<br>
+  ![](https://github.com/bugsounet/MMM-GoogleAssistant/blob/setup/resources/4e.png)
   
-4. In register steps(step 2), you can download your `credentials.json` for OAuth. Carefully store it in `MMM-GoogleAssistant` directory.
- - Or you can find your credentials from [Cloud Platform Console](https://console.cloud.google.com/) (Your Project > APIs & Services > Credentials)
+4. you have download your credentials file (`client_secret_XXX.json` file) for OAuth and Carefully store it in `MMM-GoogleAssistant` directory and rename it to `credentials.json`
+
+
+ 
 5. In your SBC, you can run auth-tool for auth. (not via SSH)
 ```sh
 cd ~/MagicMirror/modules/MMM-GoogleAssistant
@@ -57,9 +69,7 @@ node auth_and_test.js
 
    e. Now you can find `token.json` in your `MMM-AssistantGoogle` directory.
 
-## `OAuth Consent Screen` setup
-Sometimes, you might encounter some problem related to `OAuth Consent Screen missing`.
-In that case, go to [Cloud Platform Console](https://console.cloud.google.com/), then navigate to `APIs & Services > OAuth Consent Screen`. At first, you'll be asked which user type would use your project. Just select `External`. The page will be changed to `OAuth consent screen`, but leave it as unverified. On dev stage, it's enough.
+
 
 
 ## Get `deviceModelId` and `deviceInstanceId`
