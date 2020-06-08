@@ -27,7 +27,7 @@ rm installer.log 2>/dev/null
 Installer_module="MMM-GoogleAssistant"
 
 # use beep request questions ?
-Installer_beep=true
+Installer_beep=false
 
 # check version
 Installer_version="$(cat ../package.json | grep version | cut -c14-30 2>/dev/null)"
